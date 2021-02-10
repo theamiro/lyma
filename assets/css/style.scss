@@ -139,11 +139,11 @@ header {
             top:0;
             left: 0;
         }
-        .container {
+        .container-fluid {
             z-index: 99;
             .slide-content {
                 position: relative;
-                .title {
+                h1.title {
                     font-family: "Klavika", sans-serif;
                     font-size: 66px;
                     font-weight: bold;
@@ -348,8 +348,18 @@ p.description {
         }
     }
 }
-.row.ml-120 {
+.ml-120 {
     margin-left: 160px;
+}
+.mr-120 {
+    margin-right: 160px;
+}
+
+.ml-100 {
+    margin-left: 90px;
+}
+.mr-100 {
+    margin-right: 90px;
 }
 .map {
     max-height: 418px;

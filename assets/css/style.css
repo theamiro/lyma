@@ -147,15 +147,15 @@ header .item:before {
   left: 0;
 }
 
-header .item .container {
+header .item .container-fluid {
   z-index: 99;
 }
 
-header .item .container .slide-content {
+header .item .container-fluid .slide-content {
   position: relative;
 }
 
-header .item .container .slide-content .title {
+header .item .container-fluid .slide-content h1.title {
   font-family: "Klavika", sans-serif;
   font-size: 66px;
   font-weight: bold;
@@ -371,8 +371,20 @@ p.description {
   z-index: 1;
 }
 
-.row.ml-120 {
+.ml-120 {
   margin-left: 160px;
+}
+
+.mr-120 {
+  margin-right: 160px;
+}
+
+.ml-100 {
+  margin-left: 90px;
+}
+
+.mr-100 {
+  margin-right: 90px;
 }
 
 .map {
