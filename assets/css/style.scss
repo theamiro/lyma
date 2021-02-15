@@ -92,7 +92,9 @@ p {
     font-family: "WorkSans", sans-serif;
     font-weight: normal;
 }
-
+.container-fluid {
+    overflow-x: hidden;
+}
 .navbar {
     height: 106px;
     border-bottom: 1px solid transparentize(white, 0.51);
