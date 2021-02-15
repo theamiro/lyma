@@ -2,6 +2,8 @@ var initializedCarousels = []
 $(document).ready(function () {
 	$("#banner").owlCarousel({
 		navigation: false,
+		loop: true,
+		autoplay: true,
 		slideSpeed: 300,
 		paginationSpeed: 400,
 		singleItem: true,
