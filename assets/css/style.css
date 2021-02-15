@@ -106,6 +106,10 @@ p {
   background-color: rgba(0, 0, 0, 0.11);
 }
 
+.navbar.solidify {
+  background-color: rgba(45, 35, 92, 0.95);
+}
+
 .navbar .nav-item {
   margin-right: 30px;
 }

@@ -92,7 +92,7 @@ function destroy_owl(el) {
 $(window).scroll(function () {
 	var scroll = $(window).scrollTop()
 
-	if (scroll >= 500) {
+	if (scroll >= 600) {
 		$("nav").addClass("solidify")
 	} else {
 		$("nav").removeClass("solidify")
