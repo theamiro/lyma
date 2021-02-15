@@ -102,7 +102,6 @@ p {
 
 .navbar {
   height: 106px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.49);
   background-color: rgba(0, 0, 0, 0.11);
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
