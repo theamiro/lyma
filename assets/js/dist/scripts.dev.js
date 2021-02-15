@@ -1,52 +1,52 @@
-var initializedCarousels = []
+"use strict";
+
+var initializedCarousels = [];
 $(document).ready(function () {
-	$("#banner").owlCarousel({
-		navigation: false,
-		loop: true,
-		autoplay: true,
-		slideSpeed: 300,
-		paginationSpeed: 400,
-		singleItem: true,
-		pagination: true,
-		items: 1,
-	})
+  $("#banner").owlCarousel({
+    navigation: false,
+    loop: true,
+    autoplay: true,
+    slideSpeed: 300,
+    paginationSpeed: 400,
+    singleItem: true,
+    pagination: true,
+    items: 1
+  });
+  initialize_owl($("#lubricant-slider"));
+  var tabs = [{
+    target: "#nav-lubricants",
+    owl: "#lubricant-slider"
+  }, {
+    target: "#nav-fuel",
+    owl: "#fuel-slider"
+  }, {
+    target: "#nav-lpg",
+    owl: "#lpg-slider"
+  }]; // Setup 'bs.tab' event listeners for each tab
 
-	initialize_owl($("#lubricant-slider"))
-
-	let tabs = [
-		{target: "#nav-lubricants", owl: "#lubricant-slider"},
-		{target: "#nav-fuel", owl: "#fuel-slider"},
-		{target: "#nav-lpg", owl: "#lpg-slider"},
-	]
-
-	// Setup 'bs.tab' event listeners for each tab
-	tabs.forEach((tab) => {
-		$(`a[href="${tab.target}"]`).on("shown.bs.tab", () =>
-			initialize_owl($(tab.owl))
-		)
-		// .on("hide.bs.tab", () => destroy_owl($(tab.owl)))
-	})
-
-	$("#our-partners").owlCarousel({
-		loop: true,
-		margin: 10,
-		pagination: true,
-		items: 4,
-	})
-})
+  tabs.forEach(function (tab) {
+    $("a[href=\"".concat(tab.target, "\"]")).on("shown.bs.tab", function () {
+      return initialize_owl($(tab.owl));
+    }); // .on("hide.bs.tab", () => destroy_owl($(tab.owl)))
+  });
+  $("#our-partners").owlCarousel({
+    loop: true,
+    margin: 10,
+    pagination: true,
+    items: 4
+  });
+});
 
 function initialize_owl(el) {
-	el.owlCarousel({
-		margin: 0,
-		items: 3,
-	})
+  el.owlCarousel({
+    margin: 0,
+    items: 3
+  });
 }
 
 function destroy_owl(el) {
-	el.data("owlCarousel").destroy()
-}
-
-// // Select all links with hashes
+  el.data("owlCarousel").destroy();
+} // // Select all links with hashes
 // $('a[href*="#"]')
 // 	// Remove links that don't actually link to anything
 // 	.not('[href="#"]')
@@ -89,12 +89,14 @@ function destroy_owl(el) {
 // 			}
 // 		}
 // 	})
-$(window).scroll(function () {
-	var scroll = $(window).scrollTop()
 
-	if (scroll >= 500) {
-		$("nav").addClass("solidify")
-	} else {
-		$("nav").removeClass("solidify")
-	}
-})
+
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 500) {
+    $("nav").addClass("solidify");
+  } else {
+    $("nav").removeClass("solidify");
+  }
+});

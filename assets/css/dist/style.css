@@ -90,7 +90,7 @@ p {
 
 .navbar {
   height: 106px;
-  background-color: rgba(0, 0, 0, 0.11);
+  background-color: rgba(0, 0, 0, 0);
   transition: background-color 300ms ease-in-out;
 }
 .navbar.solidify {
