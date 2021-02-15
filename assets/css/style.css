@@ -104,6 +104,7 @@ p {
   height: 106px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.49);
   background-color: rgba(0, 0, 0, 0.11);
+  z-index: 99;
 }
 
 .navbar .nav-item {
@@ -126,6 +127,10 @@ p {
 
 body.homepage {
   height: 100vh;
+}
+
+header {
+  margin-top: -106px;
 }
 
 header .owl-wrapper div.owl-item div.item img {
@@ -413,6 +418,13 @@ button:focus {
 }
 
 @media only screen and (max-width: 475px) {
+  .navbar .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navbar .container-fluid .navbar-brand img {
+    height: 64px;
+  }
   .owl-item .item {
     background-position: center;
   }
