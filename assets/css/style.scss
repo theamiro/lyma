@@ -81,6 +81,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html { 
+    scroll-behavior: smooth;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: "Klavika", sans-serif;
     font-weight: bold;
@@ -263,7 +266,9 @@ p.description {
 .owl-theme {
     .owl-controls {
         margin-top: 0;
+        width: 100%;
         .owl-pagination {
+            width: 100%;
             .owl-page {
                 margin-right: 18px !important;
                 width: 58px;
@@ -286,6 +291,13 @@ p.description {
             }
         }
     }
+}
+.navbar-toggler {
+    border: 0;
+}
+
+button:focus {
+    outline: 0;
 }
 #our-partners {
     .owl-controls {
@@ -363,4 +375,74 @@ p.description {
 }
 .map {
     max-height: 418px;
+}
+@media only screen and (max-width: 475px) {
+    .owl-item {
+        .item {
+            background-position: center;
+        }
+    }
+    .ml-120 {
+        margin-left: 0px;
+            margin-right: 0;
+    }
+    .mr-120 {
+        margin-right: 0px;
+    }
+
+    .ml-100 {
+        margin-left: 0px;
+    }
+    .mr-100 {
+        margin-right: 0px;
+    }
+    .nav-tabs{
+    border: 0;
+        .nav-item {
+            margin-right: 10px;
+        }   
+    }
+    .owl-theme {
+        .owl-controls {
+            margin-top: 0;
+            width: 100%;
+            .owl-pagination {
+                width: 100%;
+                .owl-page {
+                    margin-right: 9px !important;
+                    width: 28px;
+                    &:last-child {
+                        margin-right: 0 !important;
+                    }
+                    span {
+                        height: 3px !important;
+                        width: 100% !important;
+                        opacity: 0.26;
+                        background: #d8d8d8 !important;
+                        margin: 0 !important;
+                    } 
+                    &.active {
+                        span {
+                            background: #d8d8d8 !important;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer, .copyright {
+        .container-fluid {
+            padding-left: 0;
+            padding-right:0;
+        }
+    }
+    .brands-we-stock {
+        display: flex;
+        flex-flow: column;
+        img {
+            width: 95%;
+            height: auto;
+        }
+    }
 }
