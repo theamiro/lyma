@@ -82,17 +82,13 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Klavika", sans-serif;
   font-weight: bold;
 }
 
 p {
-  font-family: "WorkSans", sans-serif;
+  font-family: "Klavika", sans-serif;
   font-weight: normal;
 }
 
@@ -215,6 +211,14 @@ p.description {
 }
 
 .supplier:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.supplier:nth-child(7) {
+  margin-bottom: 0;
+}
+
+.supplier:nth-child(8) {
   margin-bottom: 0;
 }
 
